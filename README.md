@@ -106,5 +106,13 @@ kontak
 ![Screenshot 2022-06-12 154453](https://user-images.githubusercontent.com/73973590/173236816-69b7c595-ae6c-4585-9a29-2192c93bc546.png)
 
 
+Praktikum 12: Framework Lanjutan (CRUD)
+Membuat Database
 
-
+Step 1
+CREATE DATABASE lab_ci4; Membuat Tabel seperti gambar berikut
+![Screenshot 2022-06-27 214302](https://user-images.githubusercontent.com/73973590/175968340-f1732731-0957-4e9b-b953-7faf92d2d1d3.png)
+Step 2
+Jalankan MySQL pada program XAMPP berjalan dan buat database seperti berikut :
+![Screenshot 2022-06-27 214431](https://user-images.githubusercontent.com/73973590/175968605-8bec2ad6-8821-4125-9b91-656ca377747d.png)
+Konfigurasi koneksi database
