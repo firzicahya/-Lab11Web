@@ -116,3 +116,84 @@ Step 2
 Jalankan MySQL pada program XAMPP berjalan dan buat database seperti berikut :
 ![Screenshot 2022-06-27 214431](https://user-images.githubusercontent.com/73973590/175968605-8bec2ad6-8821-4125-9b91-656ca377747d.png)
 Konfigurasi koneksi database
+Step 3
+Konfigurasi koneksi database
+Mengkonfigurasi koneksi database pada file .env seperti berikut :
+![Screenshot 2022-06-28 223304](https://user-images.githubusercontent.com/73973590/176220388-9877a811-97d5-4958-8d12-45be650cae97.png)
+Step 4
+Membuat Model
+Membuat file Model pada direktori app/Models dengan nama ArtikelModel.php seperti berikut :
+![Screenshot 2022-06-28 223437](https://user-images.githubusercontent.com/73973590/176220680-9e2186e9-c348-4980-89cd-4287f2075da7.png)
+Step 5
+Membuat Controller
+Membuat file Controller baru dengan nama Artikel.php pada direktori app/Controllers. seperti berikut :
+![Screenshot 2022-06-28 223610](https://user-images.githubusercontent.com/73973590/176221042-05c3f6ed-f7d1-4f80-91cd-4f367484e69c.png)
+Step 6
+Membuat View
+Membuat file Views baru dengan nama artikel pada direktori app/views, kemudian buat filebaru dengan nama index.php, seperti berikut
+![Screenshot 2022-06-28 223724](https://user-images.githubusercontent.com/73973590/176221354-3830489a-677d-4fb7-bb59-508a566de020.png)
+Jalankan server dan akses link : http://localhost:8080/artikel
+![Screenshot 2022-06-27 213410](https://user-images.githubusercontent.com/73973590/176221494-f0a7a070-fb49-43fc-9ddd-c8d7de094afb.png)
+Step 7
+Masukan data berikut pada database :
+![Screenshot 2022-06-28 223917](https://user-images.githubusercontent.com/73973590/176221735-a697d3cb-f458-41d5-b095-7ba732abd3e8.png)
+Refresh kembali browser, sehingga akan ditampilkan hasilnya.
+![Screenshot 2022-06-27 213506](https://user-images.githubusercontent.com/73973590/176221860-1884b557-5e67-4db5-a5b5-b6a974f320fa.png)
+Step 8
+Membuat Tampilan Detail Artikel
+Menambahkan Detail pada Artikel.php seperti berikut :
+![Screenshot 2022-06-28 224249](https://user-images.githubusercontent.com/73973590/176222508-99465cf6-d3f7-43af-9d90-5565ee08a647.png)
+Step 9
+Membuat View Detail
+Membuat file baru baru untuk halaman detail dengan nama app/views/artikel/detail.php. seperti berikut :
+![Screenshot 2022-06-28 224357](https://user-images.githubusercontent.com/73973590/176222770-cce2e96c-ef57-47d9-a770-3842e5396c15.png)
+Step 10
+Tambahkan rute baru pada Routes.php :
+![Screenshot 2022-06-28 224450](https://user-images.githubusercontent.com/73973590/176222963-ce785e88-6d54-42eb-8816-76a3f2c564ae.png)
+Tampilan Artikel setelah di Klik :
+![Screenshot 2022-06-27 213542](https://user-images.githubusercontent.com/73973590/176223058-411f9fc4-8cc4-43ee-8622-8c93ea0ed8de.png)
+Step 11
+Membuat Menu Admin
+Buat method baru pada Controller Artikel dengan nama admin_index() :
+![Screenshot 2022-06-28 224623](https://user-images.githubusercontent.com/73973590/176223343-99a367f5-81c1-4104-94f5-7adb42ae0b68.png)
+Step 12
+Buat file baru dengan nama admin_index.php pada folder artikel :
+![Screenshot 2022-06-28 224722](https://user-images.githubusercontent.com/73973590/176223533-75b818da-660f-45ae-b26b-9800a0acdc71.png)
+![Screenshot 2022-06-28 224800](https://user-images.githubusercontent.com/73973590/176223676-8e2b5777-833d-482e-b9a4-e36eb3c38f57.png)
+Step 13
+Tambahkan Routing baru pada Routes.php seperti berikut :
+![Screenshot 2022-06-28 224858](https://user-images.githubusercontent.com/73973590/176223895-389a2dee-3f0d-42bf-b5b1-be63c0979acd.png)
+Akses menu admin dengan url http://localhost:8080/admin/artikel :
+![Screenshot 2022-06-27 213619](https://user-images.githubusercontent.com/73973590/176224028-0cd0124e-878e-4199-9237-01a0b781cc6d.png)
+Step 14
+Menambah Data Artikel
+Tambahkan fungsi/method baru pada Controller Artikel dengan nama add() :
+![Screenshot 2022-06-28 225032](https://user-images.githubusercontent.com/73973590/176224257-bc66c716-e4db-4ca5-8d7b-716dd53f29a3.png)
+Step 15
+Lalu buat file baru dengan nama form_add.php pada folder artikel :
+![Screenshot 2022-06-28 225133](https://user-images.githubusercontent.com/73973590/176224488-c379acb9-d522-4dd8-baf2-ab5d1af5a49a.png)
+tampilan saat klik artikel :
+![Screenshot 2022-06-27 213651](https://user-images.githubusercontent.com/73973590/176224582-af821c64-dd4e-4b23-a56e-6ceabf386895.png)
+Step 16
+Mengubah Data artikel
+Tambahkan fungsi/method baru pada Controller Artikel dengan nama edit() :
+![Screenshot 2022-06-28 225318](https://user-images.githubusercontent.com/73973590/176224863-55b3e04a-a38d-4670-b534-49166ddb84c6.png)
+Step 17
+Lalu buat file baru dengan nama edit_add.php pada folder artikel :
+![Screenshot 2022-06-28 225412](https://user-images.githubusercontent.com/73973590/176225093-9ad1a1bb-ebea-427e-baa1-a7c93c1c8ffd.png)
+Tampilan saat mengubah artikel :
+![Screenshot 2022-06-28 225457](https://user-images.githubusercontent.com/73973590/176225298-c80575ac-7343-4265-b4dc-ead925045744.png)
+Step 18
+Menghapus Data
+Tambahkan fungsi/method baru pada Controller Artikel dengan nama delete()
+![Screenshot 2022-06-28 225606](https://user-images.githubusercontent.com/73973590/176225554-8ce8d413-96a8-4e1e-8abb-1931f415a64a.png)
+
+
+
+
+
+
+
+
+
+
