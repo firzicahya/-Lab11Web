@@ -190,8 +190,56 @@ Tambahkan fungsi/method baru pada Controller Artikel dengan nama delete()
 
 
 
+Praktikum 13: Framework Lanjutan (Modul Login)
+Step 1
+Membuat Tabel User
+Membuat Tabel: User Login
+![Screenshot 2022-06-28 230503](https://user-images.githubusercontent.com/73973590/176227377-6af0b50a-3900-40a5-a0a9-b2609b7ab139.png)
+![Screenshot 2022-06-28 230647](https://user-images.githubusercontent.com/73973590/176227714-0fc157a2-675f-457c-b695-0b1b91a8815c.png)
+Step 2
+Membuat Model User
+Selanjutnya adalah membuat Model untuk memproses data Login. Buat file baru pada direktori app/Models dengan nama UserModel.php
+![Screenshot 2022-06-28 230752](https://user-images.githubusercontent.com/73973590/176227956-5e05f88b-25df-418e-91e0-41e70f9120a6.png)
+Step 3
+Membuat Controller User
+Buat Controller baru dengan nama User.php pada direktori app/Controllers. kemudian tambahkan fungsi index() sebagai berikut :
+![Screenshot 2022-06-28 230859](https://user-images.githubusercontent.com/73973590/176228173-d4c73cc2-43ed-4b30-a3d8-e475800d27e1.png)
+![Screenshot 2022-06-28 230932](https://user-images.githubusercontent.com/73973590/176228285-636dbc47-af7d-4b6c-a3dd-a6028130c18d.png)
+Step 4
+Membuat View Login
+Buat direktori baru dengan nama user pada direktori app/views, kemudian buat file baru dengan nama login.php. Dengan kode berikut
+![Screenshot 2022-06-28 231031](https://user-images.githubusercontent.com/73973590/176228474-ce399a6d-262c-4db8-92db-387c3129b2c8.png)
+Step 5
+Membuat Database Seeder
+Buka CLI dan masukan kode "php spark make:seeder UserSeeder", Hasilnya :
+![Screenshot 2022-06-28 231426](https://user-images.githubusercontent.com/73973590/176229249-f3248d05-99ff-4528-a989-6a21d354cf6e.png)
+Lalu buka file UserSeeder.php yang berada di lokasi direktori /app/Database/Seeds/UserSeeder.php kemudian isi dengan kode berikut
+![Screenshot 2022-06-28 231518](https://user-images.githubusercontent.com/73973590/176229419-fbf8e059-c373-480d-8b4b-5d3cdae7e3c1.png)
+Selanjutnya buka kembali CLI dan ketik perintah "php spark db:seed UserSeeder" , Hasilnya :
+![Screenshot 2022-06-28 231617](https://user-images.githubusercontent.com/73973590/176229622-48bf0b3d-300c-45d5-897f-64bad88795c3.png)
+Selanjutnya buka url http://localhost:8080/user/login seperti berikut Hasilnya
 
 
+Step 6
+Menambahkan Auth Filter
+Selanjutnya membuat filer untuk halaman admin. Buat file baru dengan nama Auth.php pada direktori app/Filters. berikut :
+![Screenshot 2022-06-28 231728](https://user-images.githubusercontent.com/73973590/176229885-18638126-79a5-486e-9ce5-380357c99d9c.png)
+Selanjutnya buka file app/Config/Filters.php tambahkan kode berikut:
+![Screenshot 2022-06-28 231811](https://user-images.githubusercontent.com/73973590/176230041-70115ca8-979a-458f-91d6-5d451267e384.png)
+Selanjutnya buka file app/Config/Routes.php dan sesuaikan kode berikut :
+![Screenshot 2022-06-28 231908](https://user-images.githubusercontent.com/73973590/176230207-a0f90801-0700-41fe-acbf-f5b25042db51.png)
+Step 7
+Percobaan Akses Menu Admin
+Percobaan menu akses LOGIN
+
+Buka url dengan alamat http://localhost:8080/admin/artikel ketika alamat tersebut diakses maka akan ditarik ke halaman login berikut :
+
+Step 8
+Membuat Fungsi LOGOUT
+![Screenshot 2022-06-28 232050](https://user-images.githubusercontent.com/73973590/176230555-101fa98a-bf5f-4d7d-91ca-29ff85c83b42.png)
+
+
+Tambahkan method logout pada Controller User seperti berikut :
 
 
 
