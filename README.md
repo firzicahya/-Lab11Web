@@ -230,16 +230,23 @@ Selanjutnya buka file app/Config/Routes.php dan sesuaikan kode berikut :
 ![Screenshot 2022-06-28 231908](https://user-images.githubusercontent.com/73973590/176230207-a0f90801-0700-41fe-acbf-f5b25042db51.png)
 Step 7
 Percobaan Akses Menu Admin
-Percobaan menu akses LOGIN
+![Screenshot 2022-07-04 224021](https://user-images.githubusercontent.com/73973590/177186379-d90b38a8-12e1-45ca-ab0b-2c553caa1cf1.png)
 
+Percobaan menu akses LOGIN
+![Screenshot 2022-07-04 224021](https://user-images.githubusercontent.com/73973590/177186267-3c4b5c56-c982-4c3f-bad2-aa773ac011d3.png)
 Buka url dengan alamat http://localhost:8080/admin/artikel ketika alamat tersebut diakses maka akan ditarik ke halaman login berikut :
 
 Step 8
 Membuat Fungsi LOGOUT
 ![Screenshot 2022-06-28 232050](https://user-images.githubusercontent.com/73973590/176230555-101fa98a-bf5f-4d7d-91ca-29ff85c83b42.png)
-
-
 Tambahkan method logout pada Controller User seperti berikut :
+![Screenshot 2022-07-04 224255](https://user-images.githubusercontent.com/73973590/177186504-932e6777-c532-4832-acde-2009f6f58a88.png)
+
+Praktikum 14: Pagination dan Pencarian
+
+Step 1
+Membuat Pagination
+Untuk membuat pagination, buka Kembali Controller Artikel, kemudian modifikasi kode pada method admin_index seperti berikut
 
 
 
