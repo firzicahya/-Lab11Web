@@ -247,6 +247,26 @@ Praktikum 14: Pagination dan Pencarian
 Step 1
 Membuat Pagination
 Untuk membuat pagination, buka Kembali Controller Artikel, kemudian modifikasi kode pada method admin_index seperti berikut
+![image](https://user-images.githubusercontent.com/73973590/177807629-7736d4e6-cda1-4892-b1c2-d7f9f6c72410.png)
+Kemudian buka file views/artikel/admin_index.php dan tambahkan kode berikut dibawah deklarasi tabel data
+![image](https://user-images.githubusercontent.com/73973590/177807744-d1f40108-5ce8-4c6d-8f26-7b5e1d1efeaa.png)
+Step 2
+Membuat Pencarian
+Untuk membuat pencarian data, buka kembali Controller Artikel, pada method admin_index ubah kodenya seperti berikut
+![image](https://user-images.githubusercontent.com/73973590/177807999-195e1b7e-51b4-499d-91ad-78225aa22d84.png)
+Kemudian buka kembali file views/artikel/admin_index.php dan tambahkan form pencarian sebelum deklarasi tabel seperti berikut
+![image](https://user-images.githubusercontent.com/73973590/177808136-82d5cfd2-84ed-4c66-a3d2-352aea2174d8.png)
+Dan pada link pager ubah seperti berikut
+![image](https://user-images.githubusercontent.com/73973590/177808295-f2e79f13-032d-4cd9-a360-697da1929df4.png)
+Step 3
+Upload Gambar
+Menambahkan fungsi unggah gambar pada tambah artikel. Buka kembali Controller Artikel, sesuaikan kode pada method add seperti berikut
+![image](https://user-images.githubusercontent.com/73973590/177808460-43a263a9-ac32-48cc-b58f-176279ba80dc.png)
+Kemudian pada file views/artikel/form_add.php tambahkan field input file dan sesuaikan tag form dengan menambahkan ecrypt type seperti berikut
+![image](https://user-images.githubusercontent.com/73973590/177808583-fc789570-9d64-4636-91a3-c66a60f19dc0.png)
+
+
+
 
 
 
