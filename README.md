@@ -1,6 +1,6 @@
 Praktikum 11: PHP Framework (Codeigniter)
 
-Step 1
+Step 1.
 Buat folder baru lab11_php_ci lalu Jalankan XAMPP Ubah file php.ini seperti berikut 
 ![pemrograman2](https://user-images.githubusercontent.com/73973590/173235986-caa230d6-e252-4203-a64a-6ffd55f5f112.png)
 
